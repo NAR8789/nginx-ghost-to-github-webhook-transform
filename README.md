@@ -1,3 +1,7 @@
+# nginx Ghost to Github Webhook Transform
+
+## Purpose
+
 This working prototype explores how to use nginx to transform ghost webhooks into github repository dispatches, e.g. to publish static site via github action upon making a new post in Ghost.
 
 Ghost outbound webhooks can only do hardcoded GET requests.
@@ -8,8 +12,9 @@ But this is a POST with bearer authentication and a body.
 
 To glue them together, we can use nginx as a request-transforming proxy.
 
-# Running
+## Running
 
 1. Update webhook.io endpoint in nginx.conf.
 2. Start nginx with `./bin/run.sh`.
 3. Send a test request with `./bin/test.sh`.
+4. Modify as desired and repeat.
