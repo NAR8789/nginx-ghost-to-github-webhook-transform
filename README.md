@@ -11,5 +11,5 @@ To glue them together, we can use nginx as a request-transforming proxy.
 # Running
 
 1. Update webhook.io endpoint in nginx.conf.
-2. Start nginx with `./run.sh`.
-3. Send a test request with `./test.sh`.
+2. Start nginx with `./bin/run.sh`.
+3. Send a test request with `./bin/test.sh`.
